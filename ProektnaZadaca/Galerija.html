@@ -5,7 +5,10 @@
     <title>Галерија</title>
     <link rel="stylesheet" type="text/css" href="Home.css">
 </head>
+
+<script src="Komentari.js"></script>
 <body>
+
 <p class="name">ГАЛЕРИЈА</p>
 <div class="nav">
     <ul>
@@ -19,48 +22,67 @@
 </div>
 
 <section class="Galerija">
-    <figure>
+<figure id="CommentSpace1">
 <img src="Jas.jpeg" alt="Jas" height="300" width="300">
 <form>
-<textarea id="text" rows="5" cols="40" placeholder="Внеси коментар..">
-</textarea>
- <figcaption>
-<input class=kopce1 type="submit" value="Post">
+<textarea id="text1" rows="5" cols="40" placeholder="Внеси коментар..">
+</textarea><br>
+    <button class=kopce1 type="button" onclick="Komentar(document.getElementById('text1').value,1)">Post</button>
 <input class=kopce2 type="reset" value="Clear">
- </figcaption>
+
 </form>
+
+        <div style="background: white" id="comments1" class="userCommentContainer">
+            <div  style="background: none" class="userComment">
+            <p id="NewPost1"></p>
+            </div>
+        </div>
 </figure>
 
- <figure>
+    <figure id="CommentSpace2">
 <img src="JasNaKamila.jpg" alt="Darijan na kamila" height="300" width="300">
-<form>
-<textarea id="text1" rows="5" cols="40" placeholder="Внеси коментар.."></textarea>
-<figcaption>
-<input class=kopce1 type="submit" value="Post">
+<form action="#" method="post">
+<textarea id="text2" rows="5" cols="40" placeholder="Внеси коментар.."></textarea><br>
+    <button class=kopce1 type="button" onclick="Komentar(document.getElementById('text2').value,2)">Post</button>
 <input class=kopce2 type="reset" value="Clear">
-</figcaption>
 </form>
+        <div style="background: none" id="comments2" class="userCommentContainer">
+            <div  style="background: none" class="userComment">
+                <p id="NewPost2"></p>
+            </div>
+        </div>
 </figure>
-  <figure>
+
+  <figure id="CommentSpace3">
       <img src="Safari.jpg" alt="Safari" height="300" width="300">
-<form>
-<textarea id="text2" rows="5" cols="40" placeholder="Внеси коментар.."></textarea>
-<figcaption>
-<input class=kopce1 type="submit" value="Post">
+<form action="#" method="post">
+<textarea id="text3" rows="5" cols="40" placeholder="Внеси коментар.."></textarea><br>
+    <button class=kopce1 type="button" onclick="Komentar(document.getElementById('text3').value,3)">Post</button>
 <input class=kopce2 type="reset" value="Clear">
-</figcaption>
+
 </form>
+      <div style="background: none" id="comments3" class="userCommentContainer">
+          <div  style="background: none" class="userComment">
+              <p id="NewPost3"></p>
+          </div>
+      </div>
 </figure>
-<figure>
+
+<figure id="CommentSpace4">
     <img src="Zante.jpg" alt="Zante" height="300" width="300">
     <form>
-<textarea id="text3" rows="5" cols="40" placeholder="Внеси коментар.."></textarea>
-        <figcaption>
-<input class= kopce1 type="submit" value="Post">
-<input class= kopce2 type="reset" value="Clear">
-        </figcaption>
+<textarea id="text4" rows="5" cols="40" placeholder="Внеси коментар.."></textarea><br>
+  <button class=kopce1 type="button" onclick="Komentar(document.getElementById('text4').value,4)">Post</button>
+<input class=kopce2 type="reset" value="Clear">
+
     </form>
+    <div style="background: none" id="comments4" class="userCommentContainer">
+        <div  style="background: none" class="userComment">
+            <p id="NewPost4"></p>
+        </div>
+    </div>
  </figure>
+
 </section>
 <footer>
     <div align="center" class="socialbtns">
