@@ -180,7 +180,7 @@ margin-left:8px;
     padding: 12px;
     margin-top: 13px;
 }
-#text, #text1, #text2,#text3{
+#text1, #text2, #text3,#text4{
     border-radius: 11px;
     border: 1px solid gray;
     font-family:Arial,Ebrima,"Segoe Print";
@@ -267,3 +267,9 @@ font-size: 15px;
 font-weight: bold;
 }
 
+#NewPost1,#NewPost2,#NewPost3,#NewPost4{
+    color: black;
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
