@@ -1,13 +1,10 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 body{
-    background-color: black;
+    background-color: aquamarine;
 }
 
 div{
 width: 100%;
-height: 140px;
-color: white;
-background-color: black;
 border:0;
 margin-top: 0;
 padding:0;
@@ -25,7 +22,6 @@ padding-bottom: 6px;
     font-size: 3em;
     display: block;
     margin: 45px 0 -20px 75px;
-
 }
 
 .slika{
@@ -114,6 +110,7 @@ a, a:hover {
     color: yellow;
     transition-duration: 0.4s;
 }
+
 section .Muzika{
     margin-top: 13px;
 }
@@ -173,46 +170,91 @@ margin-left:8px;
     margin-bottom: 7px;
 }
 
-.Galerija{
-    display:grid;
-    grid-template-columns: 25% 25% 25%;
-    justify-content: space-around;
-    padding: 12px;
-    margin-top: 13px;
+.slideshow-container{
+    background-color: #FFFFFF;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
-#text1, #text2, #text3,#text4{
-    border-radius: 11px;
-    border: 1px solid gray;
+.mySlides{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:100%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+#text1, #text2, #text3{
     font-family:Arial,Ebrima,"Segoe Print";
     font-size: 15px;
+    border: none;
+    width: 200px;
     resize: none;
 }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#likeNum1,#likeNum2,#likeNum3{
+    font-size: 12px;
+    font-weight: bold;
+    color:black;
+}
 .kopce1{
-    background-color: ghostwhite;
+    background-color: white;
+    position: absolute;
+    border: none;
+    margin-right: 70px;
     padding:5px;
     cursor:pointer;
     color: dodgerblue;
-    border-radius:12px;
     font-weight: bolder;
     font-family: Calibri,SansSerif;
     font-size:15px;
-    margin: 4px;
 }
 .kopce1:hover{
-    opacity:0.7;
-}
-.kopce2{
-    background-color: ghostwhite;
-    padding:5px;
-    cursor:pointer;
-    color: dodgerblue;
-    border-radius:12px;
-    font-weight: bolder;
-    font-family: Calibri,SansSerif;
-    font-size:15px;
-    margin: 4px;
-}
-.kopce2:hover{
     opacity:0.7;
 }
 
@@ -251,7 +293,6 @@ margin-left:8px;
 }
 
 .Leo{
-
     font-family: Arial, Ebrima, "Segoe Print";
     font-size:15px;
     font-weight: bold;
@@ -267,9 +308,18 @@ font-size: 15px;
 font-weight: bold;
 }
 
-#NewPost1,#NewPost2,#NewPost3,#NewPost4{
+#NewPost1,#NewPost2,#NewPost3{
+    margin: 20px 20px;
     color: black;
-    border: 1px solid black;
-    border-radius: 2px;
+    font-family: Arial, Ebrima, "Segoe Print";
+}
 
+.userComment{
+    margin:0px;
+    padding: 0px;
+}
+
+.userCommentContainer{
+    margin:0px;
+    padding: 0px;
 }
