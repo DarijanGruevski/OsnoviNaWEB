@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерија</title>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+</head>
+
+<script src="Komentari.js"></script>
+<script src="Slideshow.js"></script>
+<body>
+
+<p class="name">ГАЛЕРИЈА</p>
+<div class="nav">
+    <ul>
+        <li><a href="HomePage.html"> Дома</a></li>
+        <li><a href="OmileniNesta.html">Омилени нешта</a></li>
+        <li><a href="Galerija.html">Галерија</a></li>
+        <li><a href="Blog.html">Блог</a></li>
+        <li><a href="Anketa.html">Анкета за посетители</a></li>
+        <li><a href="Kontakt.html">Контакт</a></li>
+    </ul>
+</div>
+<div class="slideshow-container">
+<div class="mySlides fade" id="CommentSpace1">
+<img src="Bloom.png" alt="bloom" style="width: 100%">
+    <input type="image" src="Facebook%20like.png" width="30px" height="30px" onclick="like(0,1)"/>
+   <p id="likeNum1"></p>
+    <form>
+        <textarea id="text1" rows="1" cols="100" placeholder="Внеси коментар.."></textarea>
+        <button class=kopce1 type="button" onclick="Komentar(document.getElementById('text1').value,1)">Post</button>
+</form>
+        <div style="background: white" id="comments1" class="userCommentContainer">
+            <div  style="background: none" class="userComment">
+            <p id="NewPost1"></p>
+            </div>
+        </div>
+</div>
+    <div class="mySlides fade" id="CommentSpace2">
+<img src="Odyssey.png" alt="Darijan na kamila" style="width: 100%;">
+        <input type="image" src="Facebook%20like.png" width="30px" height="30px" onclick="like(0,2)"/>
+        <p id="likeNum2"></p>
+<form action="#" method="post">
+<textarea id="text2" rows="1" cols="100" placeholder="Внеси коментар.."></textarea>
+    <button class=kopce1 type="button" onclick="Komentar(document.getElementById('text2').value,2)">Post</button>
+</form>
+        <div style="background: white" id="comments2" class="userCommentContainer">
+            <div  style="background: none" class="userComment">
+                <p id="NewPost2"></p>
+            </div>
+        </div>
+</div>
+    <div class ="mySlides fade" id="CommentSpace3">
+        <img src="Passage.png" alt="Safari" style="width: 100%">
+        <input type="image" src="Facebook%20like.png" width="30px" height="30px" onclick="like(0,3)"/>
+        <p id="likeNum3"></p>
+        <form action="#" method="post">
+            <textarea id="text3" rows="1" cols="100" placeholder="Внеси коментар.."></textarea>
+    <button class=kopce1 type="button" onclick="Komentar(document.getElementById('text3').value,3)">Post</button>
+</form>
+        <div style="background: white" id="comments3" class="userCommentContainer">
+          <div  style="background: none" class="userComment">
+              <p id="NewPost3"></p>
+          </div>
+      </div>
+
+</div>
+
+ </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<footer>
+    <div id="bottom">
+    <div align="center" class="socialbtns">
+        <ul>
+            <li><a href="https://www.facebook.com/darijan.gruevski.3/" class="fa fa-lg fa-facebook"></a></li>
+            <li><a href="https://github.com/DarijanGruevski/OsnoviNaWEB" class="fa fa-lg fa-github"></a></li>
+            <li><a href="https://www.instagram.com/gruevski_/" class="fa fa-lg fa-instagram"></a></li>
+        </ul>
+    </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
