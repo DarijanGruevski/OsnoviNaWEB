@@ -284,28 +284,37 @@ margin-left:8px;
     color: black;
 }
 
-.Blog{
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: 50% 25%;
-    justify-content: space-around;
-    padding-bottom: 250px;
-}
-
-.Leo{
-    font-family: Arial, Ebrima, "Segoe Print";
-    font-size:15px;
-    font-weight: bold;
-    border: 3px solid black;
-    resize:none;
-    text-align: center;
-}
-.BlogText{
+.blogTextBox{
 resize: none;
-border: 3px solid black;
-font-family: Arial, Ebrima, "Segoe Print";
+font-family: Calibri, Ebrima, "Segoe Print";
 font-size: 15px;
 font-weight: bold;
+text-align: center;
+}
+#textbox1{
+font-family: Calibri, Ebrima, "Segoe Print";
+}
+
+#vnes{
+    background: none;
+    position: relative;
+    border: none;
+    margin-right: 70px;
+    padding:5px;
+    cursor:pointer;
+    color: dodgerblue;
+    font-weight: bolder;
+    font-family: Calibri,SansSerif;
+    font-size:15px;
+}
+
+#vnes:hover{
+    opacity:0.7;
+}
+
+.blogText{
+    border: 1px solid black;
+    display: block;
 }
 
 #NewPost1,#NewPost2,#NewPost3{

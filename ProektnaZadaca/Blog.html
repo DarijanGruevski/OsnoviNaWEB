@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Блог</title>
     <link rel="stylesheet" type="text/css" href="Home.css">
+    <script src="blog.js"></script>
 </head>
 <body>
 <p class="name">БЛОГ</p>
@@ -19,23 +20,28 @@
     </ul>
 </div>
 
-<section class="Blog">
+<div class="blogWrapper">
 
-    <p class="Leo"><time>7:40</time>
-    26.10.2021
+    <div class="novosti">
+        <iframe src="https://www.bloomberg.com/markets/stocks" style="border:none; width:100%; height:350px"></iframe>
+        <iframe src="http://mrt.com.mk//" style="border:none; width:100%; height:350px" ></iframe>
+        <iframe src="https://www.gpblog.com/en" style="border:none; width:100%;height:350px " ></iframe>
+    </div>
+</div>
 
-        Lionel Messi signs two-year deal - with option for a third -
-    worth £25m per year after tax; the 34-year-old was set to sign a ne
-    w five-year contract at Barcelona but arrived in Paris on Tuesday to complete PSG deal;
-       Messi: "Everything about the club matches my football ambitions" </p>
-    <form>
-        <textarea class="BlogText" rows="20" cols="40" placeholder="Внеси текст.."></textarea>
-        <section>
-        <input class=kopce1 type="submit" value="Post">
-        </section>
-            </form>
 
-</section>
+<div class="blog" id='myBlog'>
+    <div class="blogTextBox" id='blogInput' >
+        <textarea rows="20" cols="100" placeholder="Type here..." id='textbox1'></textarea>
+        <p><input type="submit" onclick="Post(document.getElementById('textbox1').value)" value="Post" id="vnes"></p>
+    </div>
+    <div id="posts" class="blogContainer">
+        <div class="blogText">
+            <p id="date-time" class="dateNtime"></p>
+            <p id="newPost"> </p>
+        </div>
+    </div>
+</div>
 <footer>
     <div align="center" class="socialbtns">
         <ul>
